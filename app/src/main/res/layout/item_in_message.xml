@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <TextView
+        android:id="@+id/time_in_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="2015-4-20 14:00:00"
+        android:layout_margin="10dp"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp">
+        <ImageView
+            android:id="@+id/friend_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_launcher"
+            android:layout_marginLeft="10dp"/>
+        <TextView
+            android:layout_below="@id/friend_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="图灵"
+            android:layout_marginLeft="20dp"/>
+        <TextView
+            android:id="@+id/in_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#ff246ec7"
+            android:layout_toRightOf="@id/friend_image"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="60dp"
+            android:gravity="center_vertical"
+            android:padding="10dp"
+            android:layout_marginLeft="10dp"
+            android:textColor="#fff"
+            android:textSize="16sp"/>
+    </RelativeLayout>
+
+</LinearLayout>
